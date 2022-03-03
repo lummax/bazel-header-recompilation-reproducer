@@ -1,0 +1,3 @@
+cc_library(name="used", hdrs=["used.h"])
+cc_library(name="dead", hdrs=["dead.h"])
+cc_binary(name="main", srcs=["main.cpp"], deps=[":used", ":dead"])
